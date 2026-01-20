@@ -38,6 +38,7 @@
 <!-- Main -->
 <main>
 
+<!-- HERO -->
 <section id="home" class="hero" data-aos="fade-up">
   <div>
     <h1>Ravi Teja Yallanki</h1>
@@ -54,6 +55,7 @@
   <img src="assets/profile.png" class="profile" alt="Profile"/>
 </section>
 
+<!-- ABOUT -->
 <section id="about" data-aos="fade-right">
   <h2>About Me</h2>
   <p>
@@ -63,6 +65,7 @@
   </p>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="dark" data-aos="fade-left">
   <h2>Skills</h2>
   <div class="grid">
@@ -73,6 +76,7 @@
   </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section id="experience" data-aos="fade-up">
   <h2>Experience</h2>
   <div class="card">
@@ -87,36 +91,136 @@
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects" class="dark">
   <h2 data-aos="fade-up">Projects</h2>
 
   <div class="cards">
-    <div class="card" data-aos="zoom-in">
-      <img src="assets/api.png">
+
+    <!-- Project 1 -->
+    <div class="card" data-aos="zoom-in"
+         data-live=""
+         data-github="RAVITEJAYALLANKI/api-management-system">
+
+      <img src="assets/api.png" alt="API Management System">
       <h3>API Management System</h3>
+
+      <div class="tech-icons">
+        <i class="fab fa-python"></i>
+        <i class="fas fa-database"></i>
+        <i class="fas fa-server"></i>
+      </div>
+
       <p>FastAPI • PostgreSQL • RabbitMQ</p>
+
+      <div class="project-links">
+        <a class="github-btn" target="_blank">
+          <i class="fab fa-github"></i>
+          GitHub
+          <img class="star"
+               src="https://img.shields.io/github/stars/RAVITEJAYALLANKI/api-management-system?style=social">
+        </a>
+
+        <a class="live-btn">
+          <i class="fas fa-globe"></i> Live Demo
+        </a>
+      </div>
     </div>
 
-    <div class="card" data-aos="zoom-in">
-      <img src="assets/testing.png">
+    <!-- Project 2 -->
+    <div class="card" data-aos="zoom-in"
+         data-live=""
+         data-github="RAVITEJAYALLANKI/api-automation-framework">
+
+      <img src="assets/testing.png" alt="API Automation Framework">
       <h3>API Automation Framework</h3>
-      <p>PyTest • CI/CD</p>
+
+      <div class="tech-icons">
+        <i class="fab fa-python"></i>
+        <i class="fas fa-vial"></i>
+        <i class="fas fa-robot"></i>
+      </div>
+
+      <p>PyTest • CI/CD • Allure</p>
+
+      <div class="project-links">
+        <a class="github-btn" target="_blank">
+          <i class="fab fa-github"></i>
+          GitHub
+          <img class="star"
+               src="https://img.shields.io/github/stars/RAVITEJAYALLANKI/api-automation-framework?style=social">
+        </a>
+
+        <a class="live-btn">
+          <i class="fas fa-globe"></i> Live Demo
+        </a>
+      </div>
     </div>
 
-    <div class="card" data-aos="zoom-in">
-      <img src="assets/productivity.png">
+    <!-- Project 3 -->
+    <div class="card" data-aos="zoom-in"
+         data-live=""
+         data-github="RAVITEJAYALLANKI/productivity-app">
+
+      <img src="assets/productivity.png" alt="Productivity App">
       <h3>Productivity App</h3>
+
+      <div class="tech-icons">
+        <i class="fab fa-python"></i>
+        <i class="fab fa-docker"></i>
+        <i class="fas fa-mobile-alt"></i>
+      </div>
+
       <p>FastAPI • Docker • Flutter</p>
+
+      <div class="project-links">
+        <a class="github-btn" target="_blank">
+          <i class="fab fa-github"></i>
+          GitHub
+          <img class="star"
+               src="https://img.shields.io/github/stars/RAVITEJAYALLANKI/productivity-app?style=social">
+        </a>
+
+        <a class="live-btn">
+          <i class="fas fa-globe"></i> Live Demo
+        </a>
+      </div>
     </div>
 
-    <div class="card" data-aos="zoom-in">
-      <img src="assets/recommend.png">
+    <!-- Project 4 -->
+    <div class="card" data-aos="zoom-in"
+         data-live=""
+         data-github="RAVITEJAYALLANKI/course-recommendation-system">
+
+      <img src="assets/recommend.png" alt="Course Recommendation System">
       <h3>Course Recommendation System</h3>
-      <p>Flask • ML</p>
+
+      <div class="tech-icons">
+        <i class="fab fa-python"></i>
+        <i class="fas fa-brain"></i>
+        <i class="fas fa-chart-line"></i>
+      </div>
+
+      <p>Flask • Machine Learning</p>
+
+      <div class="project-links">
+        <a class="github-btn" target="_blank">
+          <i class="fab fa-github"></i>
+          GitHub
+          <img class="star"
+               src="https://img.shields.io/github/stars/RAVITEJAYALLANKI/course-recommendation-system?style=social">
+        </a>
+
+        <a class="live-btn">
+          <i class="fas fa-globe"></i> Live Demo
+        </a>
+      </div>
     </div>
+
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" data-aos="fade-up">
   <h2>Contact</h2>
   <p><i class="fas fa-envelope"></i> ravitejayallanki@gmail.com</p>
@@ -132,5 +236,6 @@
 <script src="script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init({ duration: 900, once: true });</script>
+
 </body>
 </html>
