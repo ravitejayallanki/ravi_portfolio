@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ravi Teja Yallanki | Backend Developer</title>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css"/>
+
+  <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
+<!-- Toggle & Menu -->
+<div class="top-controls">
+  <i class="fas fa-bars" id="menu-btn"></i>
+  <i class="fas fa-moon" id="theme-toggle"></i>
+</div>
 
 <!-- Sidebar -->
 <aside class="sidebar">
@@ -26,92 +38,86 @@
 <!-- Main -->
 <main>
 
-<!-- Hero -->
-<section id="home" class="hero">
-  <div class="hero-content">
+<section id="home" class="hero" data-aos="fade-up">
+  <div>
     <h1>Ravi Teja Yallanki</h1>
     <h3>Backend Developer</h3>
-    <p>
-      Python • FastAPI • PostgreSQL • Scalable APIs
-    </p>
+    <p>Python • FastAPI • PostgreSQL • Scalable APIs</p>
 
     <div class="hero-buttons">
-      <a class="btn" href="assets/resume.pdf" target="_blank">Resume</a>
+      <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
       <a class="btn outline" href="https://github.com/RAVITEJAYALLANKI" target="_blank">GitHub</a>
       <a class="btn outline" href="https://www.linkedin.com/in/raviteja-yallanki-a97376259" target="_blank">LinkedIn</a>
     </div>
   </div>
 
-  <div class="hero-img">
-    <img src="assets/profile.png" alt="Profile">
-  </div>
+  <img src="assets/profile.png" class="profile" alt="Profile"/>
 </section>
 
-<!-- About -->
-<section id="about">
+<section id="about" data-aos="fade-right">
   <h2>About Me</h2>
   <p>
     Backend Developer specializing in Python, FastAPI, and PostgreSQL.
-    Experienced in building scalable REST APIs, asynchronous systems
-    using RabbitMQ, and production-grade backend services.
+    Experienced in scalable APIs, async systems with RabbitMQ,
+    and production-ready deployments.
   </p>
 </section>
 
-<!-- Skills -->
-<section id="skills" class="dark">
+<section id="skills" class="dark" data-aos="fade-left">
   <h2>Skills</h2>
   <div class="grid">
     <span>Python</span><span>FastAPI</span><span>Flask</span>
-    <span>PostgreSQL</span><span>MySQL</span><span>RabbitMQ</span>
-    <span>Docker</span><span>Git</span><span>CI/CD</span>
-    <span>PyTest</span><span>Postman</span><span>SQL</span>
+    <span>PostgreSQL</span><span>RabbitMQ</span><span>Docker</span>
+    <span>Git</span><span>CI/CD</span><span>PyTest</span>
+    <span>Postman</span><span>SQL</span>
   </div>
 </section>
 
-<!-- Experience -->
-<section id="experience">
+<section id="experience" data-aos="fade-up">
   <h2>Experience</h2>
   <div class="card">
     <h3>Backend Developer – SIRPI</h3>
     <p>Aug 2025 – Present</p>
     <ul>
-      <li>Developed scalable REST APIs using FastAPI</li>
-      <li>Implemented RabbitMQ-based async processing</li>
-      <li>Optimized PostgreSQL queries</li>
-      <li>Worked with CI/CD & Docker</li>
+      <li>Built scalable FastAPI services</li>
+      <li>RabbitMQ async processing</li>
+      <li>PostgreSQL query optimization</li>
+      <li>Docker & CI/CD pipelines</li>
     </ul>
   </div>
 </section>
 
-<!-- Projects -->
 <section id="projects" class="dark">
-  <h2>Projects</h2>
+  <h2 data-aos="fade-up">Projects</h2>
 
   <div class="cards">
-    <div class="card">
+    <div class="card" data-aos="zoom-in">
+      <img src="assets/api.png">
       <h3>API Management System</h3>
-      <p>FastAPI-based scalable API platform with PostgreSQL & RabbitMQ</p>
+      <p>FastAPI • PostgreSQL • RabbitMQ</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-aos="zoom-in">
+      <img src="assets/testing.png">
       <h3>API Automation Framework</h3>
-      <p>PyTest-based API testing framework with CI/CD</p>
+      <p>PyTest • CI/CD</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-aos="zoom-in">
+      <img src="assets/productivity.png">
       <h3>Productivity App</h3>
-      <p>Full-stack productivity platform with Dockerized backend</p>
+      <p>FastAPI • Docker • Flutter</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-aos="zoom-in">
+      <img src="assets/recommend.png">
       <h3>Course Recommendation System</h3>
-      <p>Collaborative filtering based recommendation engine</p>
+      <p>Flask • ML</p>
     </div>
   </div>
 </section>
 
-<!-- Contact -->
-<section id="contact">
+<section id="contact" data-aos="fade-up">
   <h2>Contact</h2>
   <p><i class="fas fa-envelope"></i> ravitejayallanki@gmail.com</p>
   <p><i class="fas fa-phone"></i> +91 6303251057</p>
@@ -124,5 +130,7 @@
 </main>
 
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({ duration: 900, once: true });</script>
 </body>
 </html>
