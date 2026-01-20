@@ -1,241 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ravi Teja Yallanki | Backend Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ravi Teja | Portfolio</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css"/>
-
-  <!-- FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- Toggle & Menu -->
-<div class="top-controls">
-  <i class="fas fa-bars" id="menu-btn"></i>
-  <i class="fas fa-moon" id="theme-toggle"></i>
-</div>
+  <!-- ===== HEADER ===== -->
+  <header class="hero">
+    <h1>Ravi Teja</h1>
+    <p>Backend Engineer • Data & ML Enthusiast</p>
+  </header>
 
-<!-- Sidebar -->
-<aside class="sidebar">
-  <h2>RTY</h2>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</aside>
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects">
+    <h2>Projects</h2>
 
-<!-- Main -->
-<main>
+    <div class="projects-container">
 
-<!-- HERO -->
-<section id="home" class="hero" data-aos="fade-up">
-  <div>
-    <h1>Ravi Teja Yallanki</h1>
-    <h3>Backend Developer</h3>
-    <p>Python • FastAPI • PostgreSQL • Scalable APIs</p>
+      <div class="project-card">
+        <h3>API Management System</h3>
+        <p>Scalable backend system to manage APIs, authentication, and async messaging.</p>
 
-    <div class="hero-buttons">
-      <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
-      <a class="btn outline" href="https://github.com/RAVITEJAYALLANKI" target="_blank">GitHub</a>
-      <a class="btn outline" href="https://www.linkedin.com/in/raviteja-yallanki-a97376259" target="_blank">LinkedIn</a>
+        <div class="tech-stack">
+          <span>FastAPI</span>
+          <span>PostgreSQL</span>
+          <span>RabbitMQ</span>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn disabled">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>API Automation Framework</h3>
+        <p>End-to-end automation framework with reporting and CI integration.</p>
+
+        <div class="tech-stack">
+          <span>PyTest</span>
+          <span>CI/CD</span>
+          <span>Allure</span>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn disabled">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Productivity App</h3>
+        <p>Cross-platform productivity application with backend APIs.</p>
+
+        <div class="tech-stack">
+          <span>FastAPI</span>
+          <span>Docker</span>
+          <span>Flutter</span>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn disabled">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Course Recommendation System</h3>
+        <p>ML-powered recommendation engine for personalized learning paths.</p>
+
+        <div class="tech-stack">
+          <span>Flask</span>
+          <span>Machine Learning</span>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn disabled">Live Demo</a>
+        </div>
+      </div>
+
     </div>
-  </div>
+  </section>
 
-  <img src="assets/profile.png" class="profile" alt="Profile"/>
-</section>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2026 Ravi Teja. All rights reserved.</p>
+  </footer>
 
-<!-- ABOUT -->
-<section id="about" data-aos="fade-right">
-  <h2>About Me</h2>
-  <p>
-    Backend Developer specializing in Python, FastAPI, and PostgreSQL.
-    Experienced in scalable APIs, async systems with RabbitMQ,
-    and production-ready deployments.
-  </p>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="dark" data-aos="fade-left">
-  <h2>Skills</h2>
-  <div class="grid">
-    <span>Python</span><span>FastAPI</span><span>Flask</span>
-    <span>PostgreSQL</span><span>RabbitMQ</span><span>Docker</span>
-    <span>Git</span><span>CI/CD</span><span>PyTest</span>
-    <span>Postman</span><span>SQL</span>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" data-aos="fade-up">
-  <h2>Experience</h2>
-  <div class="card">
-    <h3>Backend Developer – SIRPI</h3>
-    <p>Aug 2025 – Present</p>
-    <ul>
-      <li>Built scalable FastAPI services</li>
-      <li>RabbitMQ async processing</li>
-      <li>PostgreSQL query optimization</li>
-      <li>Docker & CI/CD pipelines</li>
-    </ul>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="dark">
-  <h2 data-aos="fade-up">Projects</h2>
-
-  <div class="cards">
-
-    <!-- Project 1 -->
-    <div class="card" data-aos="zoom-in"
-         data-live=""
-         data-github="RAVITEJAYALLANKI/api-management-system">
-
-      <img src="assets/api.png" alt="API Management System">
-      <h3>API Management System</h3>
-
-      <div class="tech-icons">
-        <i class="fab fa-python"></i>
-        <i class="fas fa-database"></i>
-        <i class="fas fa-server"></i>
-      </div>
-
-      <p>FastAPI • PostgreSQL • RabbitMQ</p>
-
-      <div class="project-links">
-        <a class="github-btn" target="_blank">
-          <i class="fab fa-github"></i>
-          GitHub
-          <img class="star"
-               src="https://img.shields.io/github/stars/RAVITEJAYALLANKI/api-management-system?style=social">
-        </a>
-
-        <a class="live-btn">
-          <i class="fas fa-globe"></i> Live Demo
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="card" data-aos="zoom-in"
-         data-live=""
-         data-github="RAVITEJAYALLANKI/api-automation-framework">
-
-      <img src="assets/testing.png" alt="API Automation Framework">
-      <h3>API Automation Framework</h3>
-
-      <div class="tech-icons">
-        <i class="fab fa-python"></i>
-        <i class="fas fa-vial"></i>
-        <i class="fas fa-robot"></i>
-      </div>
-
-      <p>PyTest • CI/CD • Allure</p>
-
-      <div class="project-links">
-        <a class="github-btn" target="_blank">
-          <i class="fab fa-github"></i>
-          GitHub
-          <img class="star"
-               src="https://img.shields.io/github/stars/RAVITEJAYALLANKI/api-automation-framework?style=social">
-        </a>
-
-        <a class="live-btn">
-          <i class="fas fa-globe"></i> Live Demo
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="card" data-aos="zoom-in"
-         data-live=""
-         data-github="RAVITEJAYALLANKI/productivity-app">
-
-      <img src="assets/productivity.png" alt="Productivity App">
-      <h3>Productivity App</h3>
-
-      <div class="tech-icons">
-        <i class="fab fa-python"></i>
-        <i class="fab fa-docker"></i>
-        <i class="fas fa-mobile-alt"></i>
-      </div>
-
-      <p>FastAPI • Docker • Flutter</p>
-
-      <div class="project-links">
-        <a class="github-btn" target="_blank">
-          <i class="fab fa-github"></i>
-          GitHub
-          <img class="star"
-               src="https://img.shields.io/github/stars/RAVITEJAYALLANKI/productivity-app?style=social">
-        </a>
-
-        <a class="live-btn">
-          <i class="fas fa-globe"></i> Live Demo
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 4 -->
-    <div class="card" data-aos="zoom-in"
-         data-live=""
-         data-github="RAVITEJAYALLANKI/course-recommendation-system">
-
-      <img src="assets/recommend.png" alt="Course Recommendation System">
-      <h3>Course Recommendation System</h3>
-
-      <div class="tech-icons">
-        <i class="fab fa-python"></i>
-        <i class="fas fa-brain"></i>
-        <i class="fas fa-chart-line"></i>
-      </div>
-
-      <p>Flask • Machine Learning</p>
-
-      <div class="project-links">
-        <a class="github-btn" target="_blank">
-          <i class="fab fa-github"></i>
-          GitHub
-          <img class="star"
-               src="https://img.shields.io/github/stars/RAVITEJAYALLANKI/course-recommendation-system?style=social">
-        </a>
-
-        <a class="live-btn">
-          <i class="fas fa-globe"></i> Live Demo
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" data-aos="fade-up">
-  <h2>Contact</h2>
-  <p><i class="fas fa-envelope"></i> ravitejayallanki@gmail.com</p>
-  <p><i class="fas fa-phone"></i> +91 6303251057</p>
-</section>
-
-<footer>
-  © 2026 Ravi Teja Yallanki
-</footer>
-
-</main>
-
-<script src="script.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init({ duration: 900, once: true });</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
