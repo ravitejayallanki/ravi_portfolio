@@ -6,90 +6,86 @@
   <title>Ravi Teja | Portfolio</title>
 
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- ===== HEADER ===== -->
+  <!-- HERO SECTION -->
   <header class="hero">
-    <h1>Ravi Teja</h1>
-    <p>Backend Engineer • Data & ML Enthusiast</p>
+    <div class="container">
+      <h1>Ravi Teja</h1>
+      <p>Backend Engineer • Data & ML Enthusiast</p>
+    </div>
   </header>
 
-  <!-- ===== PROJECTS ===== -->
+  <!-- PROJECTS SECTION -->
   <section class="projects">
-    <h2>Projects</h2>
+    <div class="container">
+      <h2>Projects</h2>
 
-    <div class="projects-container">
+      <div class="projects-grid">
 
-      <div class="project-card">
-        <h3>API Management System</h3>
-        <p>Scalable backend system to manage APIs, authentication, and async messaging.</p>
+        <div class="project-card">
+          <h3>API Management System</h3>
+          <p>Scalable backend system for managing APIs, authentication, and async messaging.</p>
 
-        <div class="tech-stack">
-          <span>FastAPI</span>
-          <span>PostgreSQL</span>
-          <span>RabbitMQ</span>
+          <div class="tech-stack">
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>RabbitMQ</span>
+          </div>
+
+          <button class="btn disabled">Live Demo</button>
         </div>
 
-        <div class="project-actions">
-          <a class="btn disabled">Live Demo</a>
+        <div class="project-card">
+          <h3>API Automation Framework</h3>
+          <p>Automation framework with CI/CD integration and detailed test reporting.</p>
+
+          <div class="tech-stack">
+            <span>PyTest</span>
+            <span>CI/CD</span>
+            <span>Allure</span>
+          </div>
+
+          <button class="btn disabled">Live Demo</button>
         </div>
+
+        <div class="project-card">
+          <h3>Productivity App</h3>
+          <p>Cross-platform productivity application with containerized backend services.</p>
+
+          <div class="tech-stack">
+            <span>FastAPI</span>
+            <span>Docker</span>
+            <span>Flutter</span>
+          </div>
+
+          <button class="btn disabled">Live Demo</button>
+        </div>
+
+        <div class="project-card">
+          <h3>Course Recommendation System</h3>
+          <p>Machine-learning powered recommendation engine for personalized learning.</p>
+
+          <div class="tech-stack">
+            <span>Flask</span>
+            <span>Machine Learning</span>
+          </div>
+
+          <button class="btn disabled">Live Demo</button>
+        </div>
+
       </div>
-
-      <div class="project-card">
-        <h3>API Automation Framework</h3>
-        <p>End-to-end automation framework with reporting and CI integration.</p>
-
-        <div class="tech-stack">
-          <span>PyTest</span>
-          <span>CI/CD</span>
-          <span>Allure</span>
-        </div>
-
-        <div class="project-actions">
-          <a class="btn disabled">Live Demo</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3>Productivity App</h3>
-        <p>Cross-platform productivity application with backend APIs.</p>
-
-        <div class="tech-stack">
-          <span>FastAPI</span>
-          <span>Docker</span>
-          <span>Flutter</span>
-        </div>
-
-        <div class="project-actions">
-          <a class="btn disabled">Live Demo</a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3>Course Recommendation System</h3>
-        <p>ML-powered recommendation engine for personalized learning paths.</p>
-
-        <div class="tech-stack">
-          <span>Flask</span>
-          <span>Machine Learning</span>
-        </div>
-
-        <div class="project-actions">
-          <a class="btn disabled">Live Demo</a>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <footer>
-    <p>© 2026 Ravi Teja. All rights reserved.</p>
+    <div class="container">
+      © 2026 Ravi Teja
+    </div>
   </footer>
 
   <script src="script.js"></script>
